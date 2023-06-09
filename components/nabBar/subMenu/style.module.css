@@ -1,0 +1,44 @@
+.menu{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin-right: 250px;
+    border-radius: 7px;
+    background-color: rgb(0, 233, 202);
+    margin-left: 260px;
+    transition: 1s;
+    cursor: default;
+
+  }
+  
+  .menu ul,
+  .subMenu li {
+    padding: 10px;
+    list-style: none;
+    color: rgb(0, 92, 49);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(188, 255, 239);
+  }
+
+
+  .menu ul:nth-last-child(1),
+  .subMenu li:nth-last-child(1){
+    border-bottom: none;
+  }
+
+  .subMenu {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    left: 255px;
+    background-color: rgb(0, 233, 202);
+    border-radius: 7px;
+    
+  }
+
+  .menu svg{
+    position: absolute;
+    left: 220px;
+    color: white;
+    font-size: 20px;
+  }

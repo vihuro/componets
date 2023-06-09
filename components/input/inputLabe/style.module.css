@@ -1,0 +1,31 @@
+.wrap_input{
+    width: 100%;
+    position: relative;
+}
+
+.wrap_input input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(218, 8, 8, 0.541);
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.wrap_input span::after{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    padding: 1px;
+    transition: 0.5s;
+}
+
+.wrap_input input:focus ~ span::after,
+.wrap_input input:valid ~ span::after{
+    transform: translateY(-25px) translateX(15px);
+    border-radius: 7px;
+    padding: 7px;
+    background-color: rgb(15, 223, 126);
+    font-size: 11px;
+}

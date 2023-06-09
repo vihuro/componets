@@ -1,0 +1,126 @@
+.sideBar {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -60px;
+    bottom: -60px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.sideBar .toogle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 233, 202);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+}
+
+.toogle li {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    list-style: none;
+    transform-origin: 10px;
+    left: 0px;
+    bottom: 35px;
+}
+
+.toogle svg {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+    transition: 1s;
+}
+
+.active {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform: rotate(315deg);
+    box-shadow: 0 0 0 45px rgb(0, 233, 202),
+        0 0 0 48px rgb(0, 233, 202);
+}
+
+.active svg {
+    color: rgb(0, 233, 202);
+    font-size: 30px;
+    position: absolute;
+    transition: 1s;
+}
+
+.active li {
+    position: absolute;
+    list-style: none;
+    transform-origin: 50px;
+    left: -20px;
+    bottom: 30px;
+    transition: 1s;
+    z-index: 800;
+}
+
+.active a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    position: relative;
+}
+
+.active li svg {
+    font-size: 25px;
+    position: absolute;
+    transition: 1s;
+}
+
+
+.indicator {
+    position: absolute;
+    width: 75px;
+    height: 1px;
+
+    transform: rotate(360deg);
+    transform-origin: right;
+    left: -45px;
+    /* transition: 1s; */
+}
+
+.row_active svg {
+    color: rgb(0, 90, 71)
+
+}
+
+.row svg {
+    color: rgb(0, 90, 71)
+}
+
+.toogle .indicator::before{
+    opacity: 0;
+}
+.indicator::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(0, 233, 202);
+    box-shadow: 0 0 0 8px rgb(255, 255, 255);
+    border-radius: 50%;
+    top: -35px;
+    left: -25px;
+    transition: 1s;
+    z-index: 2;
+}
