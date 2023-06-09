@@ -2,6 +2,7 @@ import TopBar from "./topBar/TopBar"
 import React, { useEffect, useState } from "react"
 import SideBarDesktop from "./sideBar/sideBar"
 import SideBarMobile from "./sideBar/SideBarMobile"
+import SideBarMobileNew from "./sideBar/new/sideBarModileNew"
 
 
 
@@ -51,15 +52,19 @@ const NabBar = ({
     return (
         <React.Fragment>
             <TopBar />
-                    <SideBarDesktop
-                        changeToogle={changeToogle}
-                        toogle={toogle}
-                    />
-                    <SideBarMobile
+            <SideBarDesktop
+                changeToogle={changeToogle}
+                toogle={toogle}
+            />
+            <SideBarMobile
                         changeToogle={changeToogle}
                         toogle={toogle}
 
                     />
+            {/* <SideBarMobileNew
+                changeToogle={changeToogle}
+                toogle={toogle}
+            /> */}
         </React.Fragment>
 
     )

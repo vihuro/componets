@@ -5,10 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    right: -60px;
-    bottom: -60px;
+    right: 0px;
+    bottom: -0px;
     transition: 1s;
-    overflow: hidden;
+
 }
 
 .sideBar .toogle {
@@ -32,6 +32,11 @@
     transform-origin: 10px;
     left: 0px;
     bottom: 35px;
+    background-color: royalblue;
+}
+
+.toogle{
+    transform: rotate(0deg);
 }
 
 .toogle svg {
@@ -50,17 +55,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
     transform: rotate(315deg);
     box-shadow: 0 0 0 45px rgb(0, 233, 202),
         0 0 0 48px rgb(0, 233, 202);
+    transition: 1s;
 }
 
 .active svg {
     color: rgb(0, 233, 202);
     font-size: 30px;
     position: absolute;
-    transition: 1s;
 }
 
 .active li {
@@ -69,7 +73,6 @@
     transform-origin: 50px;
     left: -20px;
     bottom: 30px;
-    transition: 1s;
     z-index: 800;
 }
 
@@ -77,14 +80,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
     position: relative;
 }
 
 .active li svg {
     font-size: 25px;
     position: absolute;
-    transition: 1s;
 }
 
 
@@ -101,16 +102,16 @@
 
 .row_active svg {
     color: rgb(0, 90, 71)
-
 }
 
 .row svg {
     color: rgb(0, 90, 71)
 }
 
-.toogle .indicator::before{
+.toogle .indicator::before {
     opacity: 0;
 }
+
 .indicator::before {
     content: "";
     position: absolute;

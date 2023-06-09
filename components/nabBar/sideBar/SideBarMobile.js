@@ -58,7 +58,7 @@ export default function SideBarMobile({
                         </div>
                     )
                 })}
-                <div className={style.indicator} style={{...masterTranslate, transition:'1s all'}} />
+                <div className={style.indicator} style={{ ...masterTranslate, transition: '1s all' }} />
             </div>
         )
     }
@@ -81,7 +81,37 @@ export default function SideBarMobile({
         <div className={style.sideBar} >
             <div onClick={() => setButtonPlus(!buttonPlus)} className={`${!buttonPlus ? style['toogle'] : style['active']}`} >
                 <AiOutlinePlus onClick={() => setButtonPlus(!buttonPlus)} />
-                <List />
+                <div>
+                    {listMenus.map((item, index) => {
+                        const rotate = `rotate(${(360 / Menus.length) * index}deg)`;
+                        const tranlateY = item.className === "row_active" ? 'translateY(-10px)' : 'translateY(-50%)'
+
+                        const translate = ` translateY(50%) rotate(${45 - (360 / Menus.length) * index}deg)`;
+                        const secondRotate = `rotate(${(360 / Menus.length) * index}deg)  translateX(-20px)`;
+
+
+                        return (
+                            <div >
+                                <li key={index}
+                                    className={style[item.className]}
+                                    onClick={(e) => { e.stopPropagation(); activeIcon(index); }}
+                                    style={{
+                                        transform: `${item.className === "row_active" ? secondRotate : rotate} ${tranlateY} `,
+                                        transition: '1s'
+                                    }}>
+                                    <a href='#'
+                                        style={{
+                                            transform: translate,
+                                            transition: '1s'
+                                        }}>
+                                        {item.icon}
+                                    </a>
+                                </li>
+                            </div>
+                        )
+                    })}
+                    <div className={style.indicator} style={{ ...masterTranslate, transition: '1s all' }} />
+                </div>
             </div>
         </div>
     )

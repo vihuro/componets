@@ -1,0 +1,63 @@
+.sideBar{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.toogle{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(12, 207, 126);
+    border-radius: 50%;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    transition: 1s;
+}
+
+.toogle_active{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(12, 207, 126);
+    transition: 1s;
+    transform: rotate(315deg);
+    box-shadow: 0 0 0 55px rgb(12, 207, 126);
+}
+
+.list li{
+    list-style: none;
+    position: absolute;
+    transform-origin:70px ;
+    left: -25px;
+    bottom: 15px;
+
+}
+.list svg{
+    color: blue;
+
+}
+
+.row{
+    padding: 10px;
+    background-color: red;
+    transition: 1s;
+
+}
+
+.row_active{
+    background-color: rgb(247, 0, 214);
+    transition: 1s;
+}
