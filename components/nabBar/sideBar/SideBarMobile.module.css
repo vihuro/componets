@@ -31,7 +31,6 @@
     transform-origin: 10px;
     left: 0px;
     bottom: 35px;
-    background-color: royalblue;
 }
 
 .toogle{
@@ -127,17 +126,3 @@
     z-index: 2;
 }
 
-.border_indicator{
-    position: relative;
-}
-
-.border_indicator::before{
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 15px;
-    bottom: -38px;
-    background-color: red;
-    z-index: 3;
-    transform: rotate(-20deg);
-}

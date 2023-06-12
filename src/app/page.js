@@ -59,20 +59,31 @@ export default function Home() {
         changeToogle={setToogleMenu}
         toogle={toogleMenu}
       />
-      <div className={styles.message} >
-        <Message
-          type='error'
-        />
+      <div className={styles.container_message} >
+        <div className={styles.message} >
+          <Message
+            type='error'
+          />
+        </div>
+        <div className={styles.message} >
+          <Message
+            type='warning'
+          />
+        </div>
+        <div className={styles.message} >
+          <Message
+            type='sucess'
+          />
+        </div>
       </div>
-      <div className={styles.message} >
-        <Message
-          type='warning'
+
+
+      <div className={styles.teste_input} >
+        <Input
+          placeHolder={'INPUT'}
+
         />
-      </div>
-      <div className={styles.message} >
-        <Message
-          type='sucess'
-        />
+
       </div>
 
 

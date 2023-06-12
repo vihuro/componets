@@ -233,7 +233,21 @@
   transition: 1s;
 }
 
-.message{
+.container_message {
+  position: relative;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 200px;
+}
+
+.message {
   position: relative;
   width: 1000px;
+  height: 60px;
+  overflow: hidden;
+
+}
+
+.teste_input {
+  width: 250px;
 }
