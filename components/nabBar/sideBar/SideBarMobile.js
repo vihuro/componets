@@ -87,7 +87,7 @@ export default function SideBarMobile({
                         const tranlateY = item.className === "row_active" ? 'translateY(-10px)' : 'translateY(-50%)'
 
                         const translate = ` translateY(50%) rotate(${45 - (360 / Menus.length) * index}deg)`;
-                        const secondRotate = `rotate(${(360 / Menus.length) * index}deg)  translateX(-20px)`;
+                        const secondRotate = `rotate(${(360 / Menus.length) * index}deg)  translateX(-22px)`;
 
 
                         return (
@@ -110,7 +110,9 @@ export default function SideBarMobile({
                             </div>
                         )
                     })}
-                    <div className={style.indicator} style={{ ...masterTranslate, transition: '1s all' }} />
+                    <div className={style.indicator} style={{ ...masterTranslate, transition: '1s all' }} >
+                        <div className={style.border_indicator} />
+                    </div>
                 </div>
             </div>
         </div>

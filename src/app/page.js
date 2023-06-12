@@ -8,10 +8,14 @@ import "./globals.css";
 import { BsBoxes } from "react-icons/bs"
 import { RiTruckLine } from "react-icons/ri"
 import { FaServer } from "react-icons/fa"
+import CardMessage from '../../components/message/card/CardMessage';
+import Message from '../../components/message/material/Message';
 
 export default function Home() {
 
   const [toogleMenu, setToogleMenu] = useState(false);
+
+  const [toogleMessage, setToogleMessage] = useState(true);
 
   const [marginTop, setMarinTop] = useState("-6px");
 
@@ -55,6 +59,34 @@ export default function Home() {
         changeToogle={setToogleMenu}
         toogle={toogleMenu}
       />
+      <div className={styles.message} >
+        <Message
+          type='error'
+        />
+      </div>
+      <div className={styles.message} >
+        <Message
+          type='warning'
+        />
+      </div>
+      <div className={styles.message} >
+        <Message
+          type='sucess'
+        />
+      </div>
+
+
+      {/* <CardMessage
+        visible={toogleMessage}
+      /> */}
+      <button
+        onClick={() => setToogleMessage(!toogleMessage)}
+        style={{
+          top: 300,
+          position: 'relative'
+        }} >
+        Aqui
+      </button>
       {/* <div className={styles.topBar} >
 
       </div>

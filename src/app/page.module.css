@@ -232,3 +232,8 @@
   box-shadow: 5px 1px 0 0 rgb(255, 255, 255);
   transition: 1s;
 }
+
+.message{
+  position: relative;
+  width: 1000px;
+}

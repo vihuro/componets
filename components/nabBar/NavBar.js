@@ -1,8 +1,7 @@
-import TopBar from "./topBar/TopBar"
-import React, { useEffect, useState } from "react"
-import SideBarDesktop from "./sideBar/sideBar"
-import SideBarMobile from "./sideBar/SideBarMobile"
-import SideBarMobileNew from "./sideBar/new/sideBarModileNew"
+import TopBar from "./topBar/TopBar";
+import React, { useEffect, useState } from "react";
+import SideBarDesktop from "./sideBar/sideBar";
+import SideBarMobile from "./sideBar/SideBarMobile";
 
 
 
@@ -56,11 +55,12 @@ const NabBar = ({
                 changeToogle={changeToogle}
                 toogle={toogle}
             />
-            <SideBarMobile
+
+            {/* <SideBarMobile
                         changeToogle={changeToogle}
                         toogle={toogle}
 
-                    />
+                    /> */}
             {/* <SideBarMobileNew
                 changeToogle={changeToogle}
                 toogle={toogle}

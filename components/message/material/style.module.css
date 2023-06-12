@@ -1,0 +1,29 @@
+.container{
+    position: absolute;
+    width: 70%;
+    height: 40px;
+    left: 10%;
+    top: 25%;
+    border-radius: 7px;
+    background-color: var(--backgroud);
+    border: 1px solid var(--border);
+    color: var(--border);
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.icon{
+    grid-area: 1/1/1/1;
+    font-size: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.message{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}

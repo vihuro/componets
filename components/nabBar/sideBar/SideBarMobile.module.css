@@ -1,14 +1,13 @@
 .sideBar {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     right: 0px;
     bottom: -0px;
     transition: 1s;
-
 }
 
 .sideBar .toogle {
@@ -75,6 +74,9 @@
     bottom: 30px;
     z-index: 800;
 }
+.toogle li svg{
+    opacity: 0;
+}
 
 .active a {
     display: flex;
@@ -93,22 +95,21 @@
     position: absolute;
     width: 75px;
     height: 1px;
-
     transform: rotate(360deg);
     transform-origin: right;
     left: -45px;
     /* transition: 1s; */
 }
 
-.row_active svg {
+.row_active svg ,
+.row svg{
     color: rgb(0, 90, 71)
 }
 
-.row svg {
-    color: rgb(0, 90, 71)
-}
+
 
 .toogle .indicator::before {
+    transform: translateX(70px);
     opacity: 0;
 }
 
@@ -124,4 +125,19 @@
     left: -25px;
     transition: 1s;
     z-index: 2;
+}
+
+.border_indicator{
+    position: relative;
+}
+
+.border_indicator::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    bottom: -38px;
+    background-color: red;
+    z-index: 3;
+    transform: rotate(-20deg);
 }
