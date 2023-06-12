@@ -56,11 +56,11 @@ const NabBar = ({
                 toogle={toogle}
             />
 
-            {/* <SideBarMobile
+            <SideBarMobile
                         changeToogle={changeToogle}
                         toogle={toogle}
 
-                    /> */}
+                    />
             {/* <SideBarMobileNew
                 changeToogle={changeToogle}
                 toogle={toogle}
