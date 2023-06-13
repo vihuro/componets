@@ -1,0 +1,53 @@
+.container {
+    width: 90%;
+    height: 500px;
+
+    margin-left: 200px;
+    padding: 5px;
+
+}
+
+.table{
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.head th{
+    padding: 10px;
+    border-right: 1px solid black;
+}
+.head th:nth-last-col(1){
+    border: none;
+}
+
+.head td{
+    
+}
+
+.head{
+    background-color: rgb(0, 2, 102);
+    color: rgb(255, 255, 255);
+}
+
+.body_table{
+    background-color: rgba(208, 204, 232, 0.259);
+}
+
+.body_table tr{
+    border-bottom: 1px solid rgba(108, 85, 233, 0.259);
+}
+.body_table td{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(26, 6, 136, 0.778);
+}
+
+.body_table tr:nth-last-child(1){
+    border: none;
+}
+
+.body_table th{
+    
+}

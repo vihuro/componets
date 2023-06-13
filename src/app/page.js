@@ -10,6 +10,7 @@ import { RiTruckLine } from "react-icons/ri"
 import { FaServer } from "react-icons/fa"
 import CardMessage from '../../components/message/card/CardMessage';
 import Message from '../../components/message/material/Message';
+import Table from '../../components/table/Table';
 
 export default function Home() {
 
@@ -59,30 +60,9 @@ export default function Home() {
         changeToogle={setToogleMenu}
         toogle={toogleMenu}
       />
-      <div className={styles.container_message} >
-        <div className={styles.message} >
-          <Message
-            type='error'
-          />
-        </div>
-        <div className={styles.message} >
-          <Message
-            type='warning'
-          />
-        </div>
-        <div className={styles.message} >
-          <Message
-            type='sucess'
-          />
-        </div>
-      </div>
 
-
-      <div className={styles.teste_input} >
-        <Input
-          placeHolder={'INPUT'}
-
-        />
+      <div className={styles.table} >
+        <Table />
 
       </div>
 
@@ -90,14 +70,7 @@ export default function Home() {
       {/* <CardMessage
         visible={toogleMessage}
       /> */}
-      <button
-        onClick={() => setToogleMessage(!toogleMessage)}
-        style={{
-          top: 300,
-          position: 'relative'
-        }} >
-        Aqui
-      </button>
+
       {/* <div className={styles.topBar} >
 
       </div>

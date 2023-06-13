@@ -2,10 +2,7 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(255, 255, 255);
-
 }
 
 .input {
@@ -250,4 +247,12 @@
 
 .teste_input {
   width: 250px;
+}
+
+.table{
+  width: calc(100% - 80px) ;
+  margin-left: 80px;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+
 }
